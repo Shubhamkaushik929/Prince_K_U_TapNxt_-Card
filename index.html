@@ -1,10 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#713d20">
-<title>Pandit Ji | Spiritual Services</title>
+
+<title>Pandit Ji | Digital Profile</title>
+
+<meta name="description" content="Pandit Ji - Vedic Puja, religious ceremonies and spiritual guidance.">
 
 <style>
 :root {
@@ -15,7 +19,11 @@
   --text: #34261c;
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: Georgia, 'Times New Roman', serif;
@@ -26,6 +34,7 @@ body {
 
 .card {
   max-width: 440px;
+  width: 100%;
   margin: auto;
   background: var(--cream);
   border: 1px solid #dfc18b;
@@ -37,9 +46,8 @@ body {
 .hero {
   text-align: center;
   padding: 32px 22px 25px;
-  background: linear-gradient(145deg,#713d20,#a65b23);
+  background: linear-gradient(145deg, #713d20, #a65b23);
   color: white;
-  position: relative;
 }
 
 .om {
@@ -61,6 +69,7 @@ body {
   font-size: 27px;
   margin-top: 13px;
   color: #fff5df;
+  overflow-wrap: anywhere;
 }
 
 .designation {
@@ -89,6 +98,7 @@ body {
 .section p {
   font-size: 14px;
   line-height: 1.8;
+  white-space: pre-line;
 }
 
 .gold-line {
@@ -110,6 +120,7 @@ body {
   border: 1px solid #ead5ad;
   border-radius: 12px;
   font-size: 13px;
+  overflow-wrap: anywhere;
 }
 
 .service span {
@@ -126,6 +137,9 @@ body {
 }
 
 .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   padding: 13px 7px;
   border-radius: 10px;
@@ -136,12 +150,24 @@ body {
   text-align: center;
   border: none;
   cursor: pointer;
+  min-height: 44px;
 }
 
-.call { background: #8b542d; }
-.whatsapp { background: #218b55; }
-.save { background: #b67a2d; }
-.location-btn { background: #555d72; }
+.call {
+  background: #8b542d;
+}
+
+.whatsapp {
+  background: #218b55;
+}
+
+.save {
+  background: #b67a2d;
+}
+
+.location-btn {
+  background: #555d72;
+}
 
 .booking {
   margin: 0 22px 23px;
@@ -155,6 +181,11 @@ body {
   color: var(--dark);
   font-size: 19px;
   margin-bottom: 8px;
+}
+
+.booking p {
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .booking a {
@@ -194,9 +225,30 @@ body {
   color: #ffdc8b;
 }
 
-@media(max-width:360px) {
-  .hero h1 { font-size: 23px; }
-  .section { padding: 18px 15px; }
+@media (max-width: 360px) {
+  body {
+    padding: 10px 7px;
+  }
+
+  .hero {
+    padding: 27px 15px 22px;
+  }
+
+  .hero h1 {
+    font-size: 23px;
+  }
+
+  .section {
+    padding: 18px 15px;
+  }
+
+  .buttons {
+    padding: 0 15px 18px;
+  }
+
+  .booking {
+    margin: 0 15px 20px;
+  }
 }
 </style>
 </head>
@@ -207,95 +259,166 @@ body {
 
   <!-- PROFILE HEADER -->
   <header class="hero">
+
     <div class="om">ॐ</div>
 
-    <img class="profile"
-      src="https://placehold.co/300x300/f7e5c5/713d20?text=Pandit+Ji"
-      alt="Pandit Ji Profile Photo">
+    <img
+      class="profile"
+      src="./IMG_9801.JPG.jpeg"
+      alt="Pandit Ji Profile Photo"
+    >
 
     <h1 id="name">Pandit Shri Your Name Ji</h1>
-    <div class="designation" id="title">Vedic Pandit | Acharya</div>
-    <div class="location" id="city">📍 Your City, India</div>
+
+    <div class="designation" id="title">
+      Vedic Pandit | Acharya
+    </div>
+
+    <div class="location" id="city">
+      📍 Your City, India
+    </div>
+
   </header>
 
   <!-- ABOUT -->
   <section class="section">
+
     <h2>🙏 About Pandit Ji</h2>
+
     <div class="gold-line"></div>
+
     <p id="about">
       With years of experience in Vedic rituals and Hindu traditions,
       I provide spiritual guidance and perform religious ceremonies
       with devotion and dedication.
     </p>
+
   </section>
 
   <!-- SERVICES -->
   <section class="section">
+
     <h2>🪔 Religious Services</h2>
+
     <div class="gold-line"></div>
 
     <div class="services" id="services">
-      <div class="service"><span>🪔</span>Griha Pravesh Puja</div>
-      <div class="service"><span>🙏</span>Satyanarayan Katha</div>
-      <div class="service"><span>🔱</span>Rudrabhishek</div>
-      <div class="service"><span>💍</span>Vivah Sanskar</div>
-      <div class="service"><span>📿</span>Bhagwat Katha</div>
-      <div class="service"><span>✨</span>ALL-16-Sanskar</div>
+
+      <div class="service">
+        <span>🪔</span>
+        Griha Pravesh Puja
+      </div>
+
+      <div class="service">
+        <span>🙏</span>
+        Satyanarayan Katha
+      </div>
+
     </div>
+
   </section>
 
   <!-- CONTACT BUTTONS -->
   <div class="buttons">
-    <a class="btn call" id="callBtn" href="tel:+91 7991474196">📞 Call Now</a>
-    <a class="btn whatsapp" id="waBtn" href="https://wa.me/91 7991474196">💬 WhatsApp</a>
-    <button class="btn save" onclick="saveContact()">👤 Save Contact</button>
-    <a class="btn location-btn" id="mapBtn" href="https://maps.google.com" target="_blank">📍 Location</a>
+
+    <a class="btn call" id="callBtn" href="#">
+      📞 Call Now
+    </a>
+
+    <a class="btn whatsapp" id="waBtn" href="#" target="_blank">
+      💬 WhatsApp
+    </a>
+
+    <button class="btn save" type="button" onclick="saveContact()">
+      👤 Save Contact
+    </button>
+
+    <a
+      class="btn location-btn"
+      id="mapBtn"
+      href="#"
+      target="_blank"
+      rel="noopener"
+    >
+      📍 Location
+    </a>
+
   </div>
 
   <!-- BOOKING -->
   <div class="booking">
+
     <h2>Book a Puja / Consultation</h2>
-    <p>For puja bookings, religious ceremonies and spiritual guidance, please contact Pandit Ji.</p>
-    <a id="bookingBtn" href="https://wa.me/7991474196?text=Namaste%20Pandit%20Ji%2C%20I%20want%20to%20book%20a%20puja.">
+
+    <p>
+      For puja bookings, religious ceremonies and spiritual guidance,
+      please contact Pandit Ji.
+    </p>
+
+    <a id="bookingBtn" href="#" target="_blank">
       Book Appointment on WhatsApp
     </a>
+
   </div>
 
   <!-- SOCIAL MEDIA -->
   <div class="social" id="social">
-    <a id="youtube" href="#" target="_blank" hidden>YouTube</a>
-    <a id="instagram" href="#" target="_blank" hidden>Instagram</a>
-    <a id="facebook" href="#" target="_blank" hidden>Facebook</a>
+
+    <a id="youtube" href="#" target="_blank" rel="noopener" hidden>
+      YouTube
+    </a>
+
+    <a id="instagram" href="#" target="_blank" rel="noopener" hidden>
+      Instagram
+    </a>
+
+    <a id="facebook" href="#" target="_blank" rel="noopener" hidden>
+      Facebook
+    </a>
+
   </div>
 
+  <!-- FOOTER -->
   <footer class="footer">
-    !! श्री काशी विश्वनाथो विजयतेतराम !!<br><br>
+
+    !! श्री काशी विश्वनाथो विजयतेतराम !!
+
+    <br><br>
+
     Digital Profile Powered by <strong>TapNxt</strong>
+
   </footer>
 
 </div>
 
 <script>
+
 /* ==================================
    EDIT PANDIT JI DETAILS HERE ONLY
 ================================== */
 
 const pandit = {
-  name: "Acharya PRINCE UPADHYAY ",
-  title: " Purn Vedic Pandit | Acharya",
-  city: "VARANASI Uttar-pradesh",
 
-  phone: "+91 7991474196",
-  whatsapp: "+91 7991474196",
+  name: "Acharya PRINCE UPADHYAY",
+
+  title: "Purn Vedic Pandit | Acharya",
+
+  city: "VARANASI, Uttar Pradesh",
+
+  // Enter mobile number without +91 or spaces
+  phone: "7991474196",
 
   email: "Princekumarupdahyay@gmail.com",
-  address: "VARANASI Uttar-pradesh",
 
-  photo: ".IMG_9801.JPG.jpeg",
+  address: "VARANASI, Uttar Pradesh",
 
-  about: "पंडित जी को वैदिक अनुष्ठानों, हिंदू धार्मिक संस्कारों एवं आध्यात्मिक मार्गदर्शन का व्यापक अनुभव है। वे पूर्ण श्रद्धा, भक्ति और पारंपरिक रीति-रिवाजों के साथ प्रत्येक पूजा-अर्चना संपन्न करते हैं।,,
-           कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।
-           मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥.",
+  // Photo must be uploaded in the same folder as index.html
+  photo: "./IMG_9801.JPG.jpeg",
+
+  about: `पंडित जी को वैदिक अनुष्ठानों, हिंदू धार्मिक संस्कारों एवं आध्यात्मिक मार्गदर्शन का व्यापक अनुभव है। वे पूर्ण श्रद्धा, भक्ति और पारंपरिक रीति-रिवाजों के साथ प्रत्येक पूजा-अर्चना संपन्न करते हैं।
+
+कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।
+मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥`,
 
   services: [
     ["🪔", "Griha Pravesh Puja"],
@@ -305,17 +428,20 @@ const pandit = {
     ["📿", "Bhagwat Katha"],
     ["✨", "All 16-Sanskar"],
     ["🌺", "Navgraha Shanti"],
-    ["🕉️", "Mahamrityunjaya Jaap"]
-    ["🔮", "Janam Kundali Visheshagya"] 
-    
+    ["🕉️", "Mahamrityunjaya Jaap"],
+    ["🔮", "Janam Kundali Visheshagya"]
   ],
 
   map: "https://maps.app.goo.gl/or7s5d7MtiGESVZU9?g_st=ac",
 
   youtube: "",
+
   instagram: "https://www.instagram.com/pt_prince_shastri?lqvp=MW11M2RoeWZ5eWpxcA%3D%3D&utm_source=qr",
+
   facebook: ""
+
 };
+
 
 /* ==================================
    PROFILE DISPLAY
@@ -324,48 +450,118 @@ const pandit = {
 document.title = pandit.name + " | Digital Profile";
 
 document.getElementById("name").textContent = pandit.name;
+
 document.getElementById("title").textContent = pandit.title;
-document.getElementById("city").textContent = "📍 " + pandit.city;
+
+document.getElementById("city").textContent =
+  "📍 " + pandit.city;
+
 document.getElementById("about").textContent = pandit.about;
+
+
+/* PROFILE PHOTO */
 
 document.querySelector(".profile").src = pandit.photo;
 
-document.getElementById("callBtn").href = "tel:+" + pandit.phone;
-document.getElementById("waBtn").href = "https://wa.me/" + pandit.whatsapp;
+
+/* ==================================
+   PHONE & WHATSAPP
+================================== */
+
+// Remove spaces and symbols from phone number
+const phoneDigits = String(pandit.phone).replace(/\D/g, "");
+
+// India country code
+const fullPhone = "91" + phoneDigits;
+
+// Call button
+document.getElementById("callBtn").href =
+  "tel:+" + fullPhone;
+
+// WhatsApp button
+document.getElementById("waBtn").href =
+  "https://wa.me/" + fullPhone;
+
+
+/* ==================================
+   LOCATION
+================================== */
+
 document.getElementById("mapBtn").href = pandit.map;
 
+
+/* ==================================
+   WHATSAPP BOOKING
+================================== */
+
+const bookingMessage =
+  "Namaste Pandit Ji, I would like to book a puja or consultation.";
+
 document.getElementById("bookingBtn").href =
-  "https://wa.me/" + pandit.whatsapp +
-  "?text=" + encodeURIComponent("Namaste Pandit Ji, I would like to book a puja or consultation.");
+  "https://wa.me/" + fullPhone +
+  "?text=" + encodeURIComponent(bookingMessage);
+
+
+/* ==================================
+   SERVICES
+================================== */
 
 const servicesBox = document.getElementById("services");
+
 servicesBox.innerHTML = "";
 
 pandit.services.forEach(service => {
+
   const item = document.createElement("div");
+
   item.className = "service";
 
   const emoji = document.createElement("span");
+
   emoji.textContent = service[0];
 
   item.appendChild(emoji);
-  item.appendChild(document.createTextNode(service[1]));
+
+  item.appendChild(
+    document.createTextNode(service[1])
+  );
+
   servicesBox.appendChild(item);
+
 });
 
-/* SOCIAL LINKS */
+
+/* ==================================
+   SOCIAL MEDIA LINKS
+================================== */
 
 ["youtube", "instagram", "facebook"].forEach(platform => {
+
   const link = document.getElementById(platform);
-  if (pandit[platform]) {
-    link.href = pandit[platform];
+
+  const url = pandit[platform];
+
+  if (url && url.trim() !== "") {
+
+    link.href = url;
+
     link.hidden = false;
+
+  } else {
+
+    link.hidden = true;
+
   }
+
 });
 
-/* SAVE CONTACT / VCARD */
+
+/* ==================================
+   SAVE CONTACT / VCARD
+================================== */
 
 function saveContact() {
+
   const escapeVcard = value => String(value || "")
     .replace(/\\/g, "\\\\")
     .replace(/\n/g, "\\n")
@@ -377,23 +573,38 @@ function saveContact() {
     "VERSION:3.0",
     "FN:" + escapeVcard(pandit.name),
     "TITLE:" + escapeVcard(pandit.title),
-    "TEL;TYPE=CELL:+" + pandit.phone,
+    "TEL;TYPE=CELL:+91" + phoneDigits,
     "EMAIL:" + escapeVcard(pandit.email),
     "ADR;TYPE=WORK:;;" + escapeVcard(pandit.address),
     "URL:" + window.location.href,
     "END:VCARD"
   ].join("\r\n");
 
-  const blob = new Blob([vcard], {type: "text/vcard;charset=utf-8"});
+  const blob = new Blob(
+    [vcard],
+    { type: "text/vcard;charset=utf-8" }
+  );
+
   const url = URL.createObjectURL(blob);
 
   const a = document.createElement("a");
+
   a.href = url;
+
   a.download = "Pandit-Ji-Contact.vcf";
+
+  document.body.appendChild(a);
+
   a.click();
 
-  URL.revokeObjectURL(url);
+  a.remove();
+
+  setTimeout(() => {
+    URL.revokeObjectURL(url);
+  }, 1000);
+
 }
+
 </script>
 
 </body>
